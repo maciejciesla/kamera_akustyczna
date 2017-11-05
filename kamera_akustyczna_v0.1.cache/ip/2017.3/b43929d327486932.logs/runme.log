@@ -1,0 +1,43 @@
+
+*** Running vivado
+    with args -log kolejka_util_ds_buf_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source kolejka_util_ds_buf_0_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source kolejka_util_ds_buf_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 346.992 ; gain = 93.602
+INFO: [Synth 8-638] synthesizing module 'kolejka_util_ds_buf_0_0' [c:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.srcs/sources_1/bd/kolejka/ip/kolejka_util_ds_buf_0_0/synth/kolejka_util_ds_buf_0_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf' [c:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.srcs/sources_1/bd/kolejka/ipshared/e2ff/hdl/vhdl/util_ds_buf.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (1#1) [c:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.srcs/sources_1/bd/kolejka/ipshared/e2ff/hdl/vhdl/util_ds_buf.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'kolejka_util_ds_buf_0_0' (2#1) [c:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.srcs/sources_1/bd/kolejka/ip/kolejka_util_ds_buf_0_0/synth/kolejka_util_ds_buf_0_0.vhd:67]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 389.078 ; gain = 135.688
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 389.078 ; gain = 135.688
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 606.883 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 606.883 ; gain = 353.492
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 606.883 ; gain = 353.492
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 606.883 ; gain = 353.492
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 606.883 ; gain = 353.492
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 606.883 ; gain = 353.492
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 638.566 ; gain = 385.176
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 638.566 ; gain = 385.176
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 648.711 ; gain = 395.320
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 648.711 ; gain = 395.320
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 648.711 ; gain = 395.320
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 648.711 ; gain = 395.320
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 648.711 ; gain = 395.320
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 648.711 ; gain = 395.320
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 648.711 ; gain = 395.320
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |IBUFDS |     1|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 648.711 ; gain = 395.320
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 662.234 ; gain = 416.609
