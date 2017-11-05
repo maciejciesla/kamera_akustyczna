@@ -1,0 +1,634 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Nov  4 17:41:11 2017
+# Process ID: 10620
+# Current directory: C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.runs/synth_1
+# Command line: vivado.exe -log zad1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zad1.tcl
+# Log file: C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.runs/synth_1/zad1.vds
+# Journal file: C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source zad1.tcl -notrace
+Command: synth_design -top zad1 -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8052 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 338.180 ; gain = 94.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'zad1' [C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.srcs/sources_1/new/przetworniki.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'zad1' (1#1) [C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.srcs/sources_1/new/przetworniki.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 379.633 ; gain = 135.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 379.633 ; gain = 135.844
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc]
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[1]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[2]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[3]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[4]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[5]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[6]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[7]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[8]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[9]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[10]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[11]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[12]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[13]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[14]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_if[15]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[1]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[2]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[3]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[4]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[5]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[6]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[7]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[8]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[9]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[10]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[11]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[12]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[13]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[14]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_dat_is[15]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_i'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_n_i'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_p_i'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_n_i'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_o[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_o[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_o[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_o[0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_clk_o[1]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_cdcs_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_cdcs_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_cdcs_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'adc_cdcs_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[1]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[2]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[3]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[4]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[5]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[6]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[7]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[8]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[9]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[10]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[11]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[12]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_dat_o[13]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_*_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_*_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_*_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_wrt_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_sel_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_clk_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_rst_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[1]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[2]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dac_pwm_o[3]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinp_i[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinn_i[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinp_i[1]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinn_i[1]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinp_i[2]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinn_i[2]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinp_i[0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinn_i[0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinp_i[3]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinn_i[3]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinp_i[4]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'vinn_i[4]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_io[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_io[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_io[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_io[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_io[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_io[*]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_io[0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_io[0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_p_io[1]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'exp_n_io[1]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:155]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports {adc_clk_i[1]}]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:210]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-646] clock 'adc_clk' not found. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:212]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports {adc_dat_i[*][*]}]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:212]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports {daisy_p_i[1]}]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:214]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'adc_clk'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:216]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:216]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:216]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:216]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks adc_clk]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:216]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'adc_clk'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:217]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:217]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:217]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:217]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks adc_clk]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:217]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'adc_clk'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:218]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:218]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:218]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:218]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks adc_clk]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:218]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:219]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:219]
+WARNING: [Vivado 12-627] No clocks matched 'adc_clk'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:219]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:219]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks clk_fpga_0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:219]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:220]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:220]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_1x'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:220]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:220]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks clk_fpga_0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:220]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:221]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:221]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:221]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:221]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks clk_fpga_0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:221]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:222]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:222]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:222]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:222]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks clk_fpga_0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:222]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:223]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:223]
+WARNING: [Vivado 12-627] No clocks matched 'ser_clk'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:223]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:223]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks clk_fpga_0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:223]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:224]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:224]
+WARNING: [Vivado 12-627] No clocks matched 'pdm_clk'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:224]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:224]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks clk_fpga_0]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:224]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:225]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:225]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2x'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:225]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:225]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_o]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:225]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_o'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:226]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:226]
+WARNING: [Vivado 12-627] No clocks matched 'dac_clk_2p'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:226]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:226]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks dac_clk_o]'. [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc:226]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/makiv2/redpitaya/RedPitaya-master/fpga/sdc/red_pitaya.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/zad1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/zad1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 660.941 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 660.941 ; gain = 417.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 660.941 ; gain = 417.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 660.941 ; gain = 417.152
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element BINAR_reg was removed.  [C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.srcs/sources_1/new/przetworniki.vhd:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 660.941 ; gain = 417.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module zad1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element BINAR_reg was removed.  [C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.srcs/sources_1/new/przetworniki.vhd:56]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 660.941 ; gain = 417.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 660.941 ; gain = 417.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 660.941 ; gain = 417.152
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 664.121 ; gain = 420.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 664.121 ; gain = 420.332
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 664.121 ; gain = 420.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 664.121 ; gain = 420.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 664.121 ; gain = 420.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 664.121 ; gain = 420.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 664.121 ; gain = 420.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     1|
+|4     |FDRE   |    32|
+|5     |IBUF   |     1|
+|6     |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    55|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 664.121 ; gain = 420.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 664.121 ; gain = 139.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 664.121 ; gain = 420.332
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 125 Warnings, 114 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 667.508 ; gain = 430.699
+INFO: [Common 17-1381] The checkpoint 'C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.runs/synth_1/zad1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file zad1_utilization_synth.rpt -pb przetworniki_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 667.508 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  4 17:41:52 2017...

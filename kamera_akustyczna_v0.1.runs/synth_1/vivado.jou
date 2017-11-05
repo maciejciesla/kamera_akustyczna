@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sat Nov  4 17:41:11 2017
+# Process ID: 10620
+# Current directory: C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.runs/synth_1
+# Command line: vivado.exe -log zad1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zad1.tcl
+# Log file: C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.runs/synth_1/zad1.vds
+# Journal file: C:/makiv2/kamera_akustyczna_v0.1/kamera_akustyczna_v0.1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source zad1.tcl -notrace
