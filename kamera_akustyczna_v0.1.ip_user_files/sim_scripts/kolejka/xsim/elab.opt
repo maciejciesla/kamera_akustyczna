@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L axis_infrastructure_v1_1_0 -L fifo_generator_v13_2_0 -L axis_data_fifo_v1_1_15 -L blk_mem_gen_v8_4_0 -L xlconstant_v1_1_3 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot kolejka xil_defaultlib.kolejka xil_defaultlib.glbl -log elaborate.log

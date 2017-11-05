@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/kolejka/ip/kolejka_zad1_0_6/sim/kolejka_zad1_0_6.vhd" \
+"../../../bd/kolejka/sim/kolejka.vhd" \
+
+nosort

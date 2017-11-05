@@ -1,0 +1,11 @@
+verilog xil_defaultlib --include "../../../../kamera_akustyczna_v0.1.srcs/sources_1/bd/kolejka/ipshared/0ab1/hdl" \
+"../../../bd/kolejka/ipshared/68f7/hdl/sim_clk_gen.v" \
+"../../../bd/kolejka/ip/kolejka_sim_clk_gen_0_1/sim/kolejka_sim_clk_gen_0_1.v" \
+"../../../bd/kolejka/ip/kolejka_axis_data_fifo_0_0_1/sim/kolejka_axis_data_fifo_0_0.v" \
+"../../../bd/kolejka/ip/kolejka_blk_mem_gen_0_0/sim/kolejka_blk_mem_gen_0_0.v" \
+"../../../bd/kolejka/ip/kolejka_xlconstant_0_0/sim/kolejka_xlconstant_0_0.v" \
+"../../../bd/kolejka/ip/kolejka_xlconstant_0_2/sim/kolejka_xlconstant_0_2.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
