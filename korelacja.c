@@ -6,6 +6,7 @@
 #include <stdlib.h>
 
 #define NUMBER_OF_SAMPLES 8192
+#define TAU_RANGE  45					// Oblicz korelację tylko dla zakresu od -45 do +45 próbek przesunięcia 
 
 void usun_skladowa_stala(int16_t * signal)
 {
@@ -23,28 +24,27 @@ void usun_skladowa_stala(int16_t * signal)
 
 int16_t korelacja(int16_t* signal_a, int16_t* signal_b)
 {
-    int64_t wspolczynniki[2*NUMBER_OF_SAMPLES - 1] = { 0 };
-
+    long int wspolczynniki[2*TAU_RANGE - 1] = { 0 };
 
     uint16_t index;
     uint16_t tau;
 
     // ujemne przsunięcia
-    for( tau = 0; tau < NUMBER_OF_SAMPLES ; tau ++)
+    for( tau = NUMBER_OF_SAMPLES - TAU_RANGE; tau < NUMBER_OF_SAMPLES ; tau ++)
         for ( index =0 ; index < tau +1 ; index++)
-            wspolczynniki[tau] += signal_a[index] * signal_b[NUMBER_OF_SAMPLES - tau - 1 + index];
+            wspolczynniki[tau-NUMBER_OF_SAMPLES+TAU_RANGE] += signal_a[index] * signal_b[NUMBER_OF_SAMPLES - tau - 1 + index];
 
     //dodatnie przesunięcia
-    for( tau = 1; tau < NUMBER_OF_SAMPLES ; tau ++)
+    for( tau = 1; tau < TAU_RANGE ; tau ++)
         for ( index =0 ; index < NUMBER_OF_SAMPLES - tau ; index++)
-            wspolczynniki[NUMBER_OF_SAMPLES + tau - 1] += signal_b[index] * signal_a[ tau + index];
+            wspolczynniki[TAU_RANGE + tau - 1] += signal_b[index] * signal_a[ tau + index];
 
     int16_t pozycja =0;
-    for(index = 0; index < NUMBER_OF_SAMPLES*2-1; index++)
+    for(index = 0; index < TAU_RANGE*2-1; index++)
         if( wspolczynniki[pozycja] < wspolczynniki[index])
             pozycja = index;
 
-    return pozycja - NUMBER_OF_SAMPLES + 1;
+    return pozycja - TAU_RANGE + 1;
 }
  
 int main(void)
