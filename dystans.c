@@ -104,7 +104,7 @@ int main(void)
 	printf("Przesuniecie = %d [probek] \n", przesuniecie );
 	
 	int32_t wspolrzedne_x[2] ;
-	polozenie(przesuniecie, wspolrzedne_x)
+	polozenie(przesuniecie, wspolrzedne_x);
 	printf("Możliwe wspolrzedne x'owe przy y = %d [mm] to: %d [mm]\t lub %d [mm]\n",distance_soundsource_OX, wspolrzedne_x[0], wspolrzedne_x[1]);
 	
 	munmap(pamiec,8* sysconf(_SC_PAGESIZE));
