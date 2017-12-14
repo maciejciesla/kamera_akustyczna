@@ -10,6 +10,6 @@
 								[czas w impulsach 125 MHz]
 Czas liczenia korelacji z bezpoœrendim odczytem z BRAMu: 	4060895 - 4091488		//32[ms] (dla porównania czas zebrania 1024 próbek to 16.8[ms] przy 61[kHz])
 Czas liczenia korelacji z kopiowaniem: 				1049409 -1060330		//8.5[ms]
-Czas samego kopiowania z jednym odczytem: 			26441 - 29167			//2.2[ms]
-Czas samego kopiowania z podwójnym odczytem: 			44282 - 44351			//3.55[ms]
+Czas samego kopiowania z jednym odczytem: 			26441 - 29167			//0.22[ms]
+Czas samego kopiowania z podwójnym odczytem: 			44282 - 44351			//0.35[ms]
 
