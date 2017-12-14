@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 
-#define NUMBER_OF_SAMPLES 8192
+#define NUMBER_OF_SAMPLES 1024
 #define TAU_RANGE  45					// Oblicz korelację tylko dla zakresu od -45 do +45 próbek przesunięcia 
 
 #include <math.h>
@@ -78,8 +78,6 @@ int main(void)
 	uint32_t* pamiec;
 	char *name = "/dev/mem";
 	
-	
-	
 	if((fd = open(name, O_RDWR)) < 0) 
 	{
 		perror("open");
@@ -91,10 +89,11 @@ int main(void)
 		
 	int16_t channel_1[NUMBER_OF_SAMPLES],channel_2[NUMBER_OF_SAMPLES];
 	
-	for(uint16_t i=0;i<8192 ;i++)
+	for(uint16_t i=0; i < NUMBER_OF_SAMPLES ; i++)
 	{
-		channel_1[i] = pamiec[i]&0x0000FFFF;
-		channel_2[i] = (pamiec[i]& 0xFFFF0000) >>16;
+		uint32_t value = pamiec[i];
+		channel_1[i] = value&0x0000FFFF;
+		channel_2[i] = (value& 0xFFFF0000) >> 16;
 	}
 	
 	usun_skladowa_stala(channel_1);

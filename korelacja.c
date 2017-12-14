@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 
-#define NUMBER_OF_SAMPLES 8192
+#define NUMBER_OF_SAMPLES 1024
 #define TAU_RANGE  45					// Oblicz korelację tylko dla zakresu od -45 do +45 próbek przesunięcia 
 
 void usun_skladowa_stala(int16_t * signal)
@@ -61,13 +61,19 @@ int main(void)
 	
 	pamiec = ( uint32_t* ) mmap(NULL, 8*sysconf(_SC_PAGESIZE), /* map the memory */
 			 PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0x43000000);
+	
+	//enable = ( uint32_t* ) mmap(NULL, sysconf(_SC_PAGESIZE), /* map the memory */
+	//		 PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0x42000000);
+		
+	//enable[2] = 0;
 		
 	int16_t channel_1[NUMBER_OF_SAMPLES],channel_2[NUMBER_OF_SAMPLES];
 	
-	for(uint16_t i=0;i<8192 ;i++)
+	for(uint16_t i=0; i < NUMBER_OF_SAMPLES ; i++)
 	{
-		channel_1[i] = pamiec[i]&0x0000FFFF;
-		channel_2[i] = (pamiec[i]& 0xFFFF0000) >>16;
+		uint32_t value = pamiec[i];
+		channel_1[i] = value&0x0000FFFF;
+		channel_2[i] = (value& 0xFFFF0000) >> 16;
 	}
 	
 	usun_skladowa_stala(channel_1);
@@ -76,7 +82,10 @@ int main(void)
 	int16_t przesuniecie = korelacja( channel_1, channel_2 );
 	printf("Przesuniecie = %d [probek] \n", przesuniecie );
 
+	//enable[2] = 1;
+	
 	munmap(pamiec,8* sysconf(_SC_PAGESIZE));
+	//munmap(enable,sysconf(_SC_PAGESIZE));	
 	
 	return 0;
 }
