@@ -1,0 +1,109 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE ieee.numeric_std.ALL;
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity kor is
+    Port ( data_a : in STD_LOGIC_VECTOR (13 downto 0);
+           data_b : in STD_LOGIC_VECTOR (13 downto 0);
+           clk : in STD_LOGIC;
+           result : out integer);
+end kor;
+
+architecture Behavioral of kor is
+type part_of_data is array (1023 downto 0) of integer;
+type correlation_data is array (89 downto 0) of integer range 0 to 100000000;
+signal NUMBER_OF_SAMPLES : integer := 1024;
+signal TAU_RANGE : integer := 45;
+
+
+
+begin
+korelacja: process(clk)
+variable CNT : integer range 0 to 2000;
+variable CNT1 : integer range 0 to 2000;
+variable sum : integer range 0 to 1000000000;
+variable dataia : integer;
+variable dataib : integer;
+variable i :integer;
+variable tau :integer;
+variable canal_a : part_of_data ;
+variable canal_b : part_of_data;
+variable mean_a : integer ;
+variable mean_b : integer range 0 to 100000;
+variable coefficients : correlation_data;
+variable position : integer range 0 to 10000;
+variable temp : integer range 0 to 1000000000;
+variable temp1 : integer range 0 to 1000000000;
+variable temp2 : integer range 0 to 1000000000;
+
+begin
+if (rising_edge(clk)) then
+    if(CNT1<NUMBER_OF_SAMPLES)then
+        dataia := CONV_INTEGER(data_a);
+        dataib := CONV_INTEGER(data_b);
+        if(dataia > 0)then         --zapisanie wszystkich danych
+            canal_a(CNT1) := dataia;
+            canal_b(CNT1) := dataib;
+            CNT1 := CNT1 + 1;
+        end if;  
+    else
+        for CNT in 0 to 1023 loop
+            sum := sum + canal_a(CNT);
+        end loop;
+        sum := sum + (512);
+        mean_a := sum/NUMBER_OF_SAMPLES;     --liczenie stalej skladowej kanalu a
+        sum := 0;
+        for CNT in 0 to 1023 loop
+            sum := sum + canal_b(CNT);
+        end loop;
+        sum := sum + (512);
+        mean_b := sum/NUMBER_OF_SAMPLES;     --liczenie stalej skladowej kanalu b
+        sum :=0;
+        for i in 0 to 1023 loop
+            canal_a(i) := canal_a(i) - mean_a;
+            canal_b(i) := canal_b(i) - mean_b;    -- usuwanie stalej skladowej
+        end loop;
+        
+        
+        for tau in 979 to 1024 loop    --ujemne przesuniecie
+                for  i in 0 to tau  loop
+                    coefficients(tau-NUMBER_OF_SAMPLES+TAU_RANGE) := coefficients(tau-NUMBER_OF_SAMPLES+TAU_RANGE) + (canal_a(i) * canal_b(NUMBER_OF_SAMPLES - tau - 1 + i));
+                end loop;
+        end loop;
+        temp:=TAU_RANGE-1;
+        for tau in 1 to temp loop    --dodatnie przesuniecie
+            temp1 := NUMBER_OF_SAMPLES - tau-1;
+                for  i in 0 to temp1 loop
+                    coefficients(TAU_RANGE + tau - 1) := coefficients(TAU_RANGE + tau - 1) + (canal_b(i) * canal_a(tau + i));
+                end loop;
+        end loop;
+        
+        temp2 :=TAU_RANGE*2-2;
+        for i in 0 to temp2 loop
+                if( coefficients(position) < coefficients(i)) then
+                    position := i;
+                end if;
+        end loop;
+        
+        position := position  - TAU_RANGE + 1;
+        
+        CNT1 := 0;
+    end if; 
+end if;
+result <= position;
+
+
+end process;
+
+
+end Behavioral;
